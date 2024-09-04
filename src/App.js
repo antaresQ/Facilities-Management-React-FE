@@ -6,9 +6,9 @@ import {useState, useEffect} from 'react';
 
 function App() {
 
-  const [movies, setMovies] = useState();
+  const [rooms, setRooms] = useState();
 
-  const getMovies = async () =>{
+  const getRooms = async () =>{
 
     try {
 
@@ -16,7 +16,7 @@ function App() {
 
       console.log(response.data);
       
-      setMovies(response.data);
+      setRooms(response.data);
 
     }
     catch (err) {
@@ -26,7 +26,7 @@ function App() {
   }
 
   useEffect (() =>{
-    getMovies();
+    getRooms();
   }, [])
 
   return (
