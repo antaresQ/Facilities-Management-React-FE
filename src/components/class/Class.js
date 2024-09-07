@@ -15,6 +15,7 @@ const Class = ({rooms}) => {
                                 <div className='room-card'>
                                     <div className="room-name">
                                         <h4>Name: {room.name}</h4>
+                                        Type: {room.roomType}
                                     </div>
                                 </div>
                             </div>
