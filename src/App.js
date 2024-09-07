@@ -17,7 +17,8 @@ function App() {
     try {
 
       const response = await api.get("/api/v1/rooms");
-
+      
+      console.log(new Date().toLocaleString());
       console.log(response.data);
       
       setRooms(response.data);
@@ -40,7 +41,7 @@ function App() {
      <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home rooms={rooms}/>}></Route>
-          <Route path="*" element = {<NotFound/>}></Route>
+          {/* <Route path="*" element = {<NotFound/>}></Route> */}
         </Route>
      </Routes>
 

@@ -10,7 +10,7 @@ const Class = ({rooms}) => {
             {
                 rooms?.map((room) =>{
                     return(
-                        <Paper>
+                        <Paper key={room.id}>
                             <div className='room card container'>
                                 <div className='room-card'>
                                     <div className="room-name">
