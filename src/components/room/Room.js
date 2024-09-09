@@ -14,10 +14,10 @@ const Room = ({rooms}) => {
                 rooms?.map((room) =>{
                     return(
                         <Paper key={room.id}>
-                            <div className='room card container'>
+                            <div className='room-card-container'>
                                 <div className='room-card'>
                                     <div className="room-detail">
-                                        <div className='room-Image'>
+                                        <div className='room-image'>
                                             <img src={room.imageUrl} alt="" />
                                         </div>
                                         <div className='room-name'>

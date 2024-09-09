@@ -1,4 +1,22 @@
 
+.room-carousel-container {
+    width: 100vw;
+    background-color: black;
+}
+
+.room-image {
+    height: 900px;
+    border: 1px solid gold;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.room-image > img{
+    height: 100%;
+    width: 100%;
+
+}
+
+
 .room-buttons-container {
     display: flex;
     justify-content: space-between;
