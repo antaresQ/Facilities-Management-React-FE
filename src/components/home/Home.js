@@ -1,10 +1,10 @@
 //import React from 'react';
-import Class from '../class/Class';
+import Room from '../room/Room';
 
 
 const Home = ({rooms}) => {
   return (
-    <Class rooms = {rooms}/>
+    <Room rooms = {rooms}/>
   )
 }
 

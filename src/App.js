@@ -6,6 +6,7 @@ import Layout from './components/Layout';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/home/Home';
 import Header from './components/header/Header';
+import Video from './components/video/Video';
 import NotFound from './components/notFound/NotFound';
 
 
@@ -42,6 +43,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home rooms={rooms}/>}></Route>
+          <Route path="/Video/:ytVideoId" element={<Video />}></Route>
           <Route path="*" element = {<NotFound/>}></Route>
         </Route>
       </Routes>
