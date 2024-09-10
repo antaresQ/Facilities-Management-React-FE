@@ -18,7 +18,7 @@ function App() {
 
     try {
 
-      const response = await api.get("/api/v1/rooms");
+      const response = await api.get("/api/v1/room/allRooms");
       
       console.log(new Date().toLocaleString());
       console.log(response.data);
