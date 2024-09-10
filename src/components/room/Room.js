@@ -27,7 +27,7 @@ const Room = ({rooms}) => {
                                             Type: {room.roomType}
                                         </div>
                                         <div className='room-buttons-container'>
-                                            <Link to={(room.VideoUrl != null) ? `/Video/${room.videoUrl.substring(room.videoUrl.length - 11)}` : null}>
+                                            <Link to={(room.videoUrl != null) ? `/video/${room.videoUrl.substring(room.videoUrl.length - 11)}` : null}>
                                                 <div className="play-button-icon-container">
                                                     <FontAwesomeIcon className='play-button-icon'
                                                         icon={faCirclePlay}

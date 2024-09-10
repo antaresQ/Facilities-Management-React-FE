@@ -2,11 +2,11 @@ import {useParams} from 'react-router-dom';
 import ReactPlayer from 'react-player';
 import './Video.css';
 
-import React from 'react'
+import React from 'react';
 
 const Video = () => {
     let params = useParams();
-    let key = params.videoUrl;
+    const key = params.ytVideoId;
 
   return (
     <div className='react-player-container'>
