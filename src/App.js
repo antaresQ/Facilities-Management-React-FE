@@ -8,6 +8,8 @@ import Home from './components/home/Home';
 import Header from './components/header/Header';
 import Video from './components/video/Video';
 import About from './components/about/About';
+import Bookings from './components/bookings/Bookings';
+import BookingForm from './components/bookingForm/BookingForm';
 import NotFound from './components/notFound/NotFound';
 
 function App() {
@@ -47,6 +49,8 @@ function App() {
         <Route path='/' element={<Layout />} >
           <Route index element={<Home rooms={rooms}/>} />
           <Route path="video/:ytVideoId" element={<Video />} />
+          <Route path="bookings/Bookings" element={<Bookings />} />
+          <Route path="bookingForm/BookingForm" element={<BookingForm />} />
           <Route path="About" element={<About />} />
         </Route>
       </Routes>
